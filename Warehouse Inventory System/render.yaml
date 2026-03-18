@@ -1,19 +1,19 @@
 services:
   - type: web
-    name: warehouse-inventory
-    env: php
+    name: homonhon-inventory
+    runtime: php
     plan: free
-    region: singapore # Choose the region closest to you
-    buildCommand: echo "Ready to deploy"
+    region: singapore
+    buildCommand: composer install
     startCommand: apache2-foreground
     envVars:
       - key: DB_HOST
-        sync: false # You will set this in Render Dashboard
+        value: db.otrkginfndevnotgkajc.supabase.co
       - key: DB_NAME
-        sync: false
+        value: postgres
       - key: DB_USER
-        sync: false
+        value: postgres
       - key: DB_PASS
-        sync: false
+        value: Wh01302016!2025
       - key: DB_PORT
         value: 5432
