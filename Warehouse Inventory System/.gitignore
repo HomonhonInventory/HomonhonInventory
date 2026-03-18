@@ -1,9 +1,0 @@
-# Ignore database credentials
-db.php
-
-# Ignore OS files
-.DS_Store
-Thumbs.db
-
-# Ignore temp files
-*.log
